@@ -8,3 +8,4 @@ pandas>=1.3.2 #pandas
 torch>=1.12 #pytorch
 tf-nightly>=2.10.0.dev2022071 #tensorflow
 yfinance >= 0.1.73 #yahoo finance for testing purpose
+pandas_ta >= 0.3.14b #library that leverages the Pandas package with Indicators and Utility functions
