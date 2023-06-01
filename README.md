@@ -23,7 +23,7 @@ COPY requirements.txt /code/
 # Install dependencies during the build
 RUN pip install -r requirements.txt
 
-# Copy everthign in currente dir to container code dir
+# Copy everything from current dir to container's code dir
 COPY . /code/
 ```
 
@@ -32,7 +32,7 @@ COPY . /code/
 The docker-compose.yml file describes the services in the app. At the beginning a web server and database are only added. This file also describes which Docker images these services use, how they link together, any volumes they might need to be mounted inside the containers. Finally, the file describes which ports these services expose to.
 
 ```yml
-version: "3.9" # lastest version as of now
+version: "3.8" # lastest version as of now
 
 services:
   web:
